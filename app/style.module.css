@@ -1,0 +1,7 @@
+.layout_web {
+  @apply w-full h-full antialiased bg-transparent;
+
+  & main {
+    @apply flex flex-col items-start justify-between w-full min-h-screen;
+  }
+}
