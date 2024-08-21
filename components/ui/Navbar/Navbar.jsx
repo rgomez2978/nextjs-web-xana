@@ -22,9 +22,9 @@ const Navbar = () => {
 
   useEffect(() => {
     getData();
-    window.addEventListener("scroll", () => {
-      setScrollActive(window.scrollY > 10);
-    });
+    // window.addEventListener("scroll", () => {
+    //   setScrollActive(window.scrollY > 40);
+    // });
 
   }, []);
 
@@ -34,15 +34,15 @@ const Navbar = () => {
     <>
       {dataFetch && (
 
-        <header className={`fixed w-full bg-white flex flex-wrap items-center py-2 shadow-md ${scrollActive ? ' shadow-md pt-0' : ' pt-4'}`}>
+        <header className={`fixed z-30 w-full bg-white flex flex-wrap items-center py-2 shadow-md`}>
 
-          <div className="container flex flex-row mx-auto">
+          <div className="container flex flex-row px-10 mx-auto">
 
             <div className="flex items-center justify-between flex-1">
               <Image
                 alt="Background Image"
                 src={'images/logo_xana.svg'}
-                width={100}
+                width={80}
                 height={20}
                 sizes="100vw 100vh"
               />
@@ -56,7 +56,7 @@ const Navbar = () => {
 
             <div className="hidden w-full md:flex md:items-center md:w-auto" id="menu">
               <nav>
-                <ul className="items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
+                <ul className="items-center justify-between pt-4 text-sm text-gray-700 md:flex md:pt-0">
                   {dataFetch.map((item) => (
                     <li key={item.id}>
                       <LinkScroll
@@ -64,8 +64,8 @@ const Navbar = () => {
                         to={item.section}
                         spy={true}
                         smooth={true}
-                        offset={-80}
-                        duration={1000}
+                        offset={-60}
+                        duration={800}
                         onSetActive={() => {
                           setActiveLink(item.section);
                         }}

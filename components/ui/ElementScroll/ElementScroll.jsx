@@ -18,7 +18,7 @@ const ElementScroll = ({ data, section }) => {
 
   return (
     <Scroll name={section}>
-      <section className="w-auto my_border" >
+      <section className="w-full" >
         <SelectComponent />
       </section>
     </Scroll>

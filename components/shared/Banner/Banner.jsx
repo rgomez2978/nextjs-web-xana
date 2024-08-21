@@ -2,11 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import style from "./style.module.css";
 
-
 const Banner = ({ data }) => {
-
-  console.log('data', data)
-
   return (
     <section className={`${style.section_banner_container}`} >
       {/* Banner - Background */}
@@ -24,7 +20,6 @@ const Banner = ({ data }) => {
       <div className={`${style.banner_text} `} >
         <header>
           <h1 dangerouslySetInnerHTML={{ __html: data?.title }} />
-          {/* <p dangerouslySetInnerHTML={{ __html: data?.description }} /> */}
         </header>
         {/* <footer>
           {data.links.map((item) => (

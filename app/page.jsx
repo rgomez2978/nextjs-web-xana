@@ -12,10 +12,10 @@ export default async function Home() {
 
 
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen mx-auto my_border ">
+    <main className="flex flex-col items-center justify-between min-h-screen mx-auto ">
 
       <Banner data={header} />
-      <article className="container w-full mx-auto my_border">
+      <article className="w-full mx-auto my_border my_container">
         <ElementScroll section={'aboutus'} data={aboutus} />
 
       </article>
