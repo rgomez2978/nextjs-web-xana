@@ -8,7 +8,7 @@ npm install react-hook-form
 npm install zustand
 npm i @tailwindcss/forms
 npm i tailwindcss-animated
-npm install babel-plugin-inline-react-svg --save-dev
+npm install framer-motion
 
 
 

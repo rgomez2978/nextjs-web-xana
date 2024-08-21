@@ -8,14 +8,14 @@ export const metadata = {
   description: "Portal web XANA",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
-      <body className={`${FreizeitTrial.variable} ${style.layout_web}`}>
+      <body className={`${FreizeitTrial.variable} ${style.layout_web} font-FreizeitTrial`}>
         <main>
-          {/* <SeoPage /> */}
           <Navbar />
-          {/* <Sidebar /> */}
           {children}
           <Footer />
         </main>

@@ -1,7 +1,18 @@
 {
   "header": {
-    "title": "La farmacia que cuida de ti como lo haría el doctor de tu familia.",
-    "img": "images/hero/hero_section.svg"
+    "title": "La farmacia que cuida</br> de ti como lo haría el</br> doctor de tu familia.",
+    "description": "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
+    "img": "images/hero/hero_section.svg",
+    "links": [
+      {
+        "id": 1,
+        "text": "Postulate como proveedor",
+        "type": "link",
+        "icon": "",
+        "url": "",
+        "title": "Ver video"
+      }
+    ]
   },
   "aboutus": {
     "title": "Que hace xana diferente?",

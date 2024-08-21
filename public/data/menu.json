@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Quiénes somos",
+      "section": "aboutus",
+      "link": "/"
+    },
+    {
+      "id": 2,
+      "title": "Productos",
+      "section": "products",
+      "link": "/"
+    },
+    {
+      "id": 3,
+      "title": "Úbicanos",
+      "section": "contactus",
+      "link": "/"
+    },
+    {
+      "id": 4,
+      "title": "Blog",
+      "section": "blog",
+      "link": "/"
+    }
+  ]
+}

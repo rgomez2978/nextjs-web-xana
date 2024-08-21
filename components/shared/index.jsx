@@ -1,0 +1,10 @@
+export { default as Banner } from '@/components/shared/Banner/Banner';
+export { default as Title } from '@/components/shared/Title/Title';
+export { default as Socials } from '@/components/shared/Socials/Socials';
+export { default as Faqs } from '@/components/shared/Faqs/Faqs';
+export { default as Accordion } from '@/components/shared/Accordion/Accordion';
+export { default as CTA } from '@/components/shared/CTA/CTA';
+export { default as Subscribe } from '@/components/shared/Subscribe/Subscribe';
+export { default as Button } from '@/components/shared/Button/Button';
+export { default as Features } from '@/components/shared/Features/Features';
+export { default as Services } from '@/components/shared/Services/Services';
