@@ -6,29 +6,13 @@ import { Element as Scroll } from "react-scroll";
 const ElementScroll = ({ data, section }) => {
 
   const SelectComponent = () => {
-    let Comp;
-    switch (section) {
-      case 'aboutus':
-        Comp = <AboutUs data={data} />
-        break;
-      case 'products':
-
-        break;
-      case 'con':
-
-        break;
-      case 'contactus':
-
-        break;
-
-      case 'blog':
-
-        break;
-
-      default:
-        break;
-    }
-    return Comp
+    const componentsMap = {
+      aboutus: <AboutUs data={data} />,
+      products: <AboutUs data={data} />,
+      contactus: <AboutUs data={data} />,
+      blog: <AboutUs data={data} />,
+    };
+    return componentsMap[section] || null;
   }
 
 

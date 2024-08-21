@@ -2,11 +2,14 @@ import React from "react";
 import { TextData } from '@/components/ui'
 
 const AboutUs = ({ data }) => {
-
   console.log('AboutUs', data)
-  return (
-    <>About US</>
-  )
+
+  if (data && data !== undefined) {
+    return (
+      <>
+      </>
+    )
+  }
 }
 
 export default AboutUs
