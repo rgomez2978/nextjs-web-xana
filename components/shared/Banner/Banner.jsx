@@ -21,7 +21,7 @@ const Banner = ({ data }) => {
       </figure>
 
       {/* Banner - Content */}
-      <div className={`${style.banner_text}`} >
+      <div className={`${style.banner_text} `} >
         <header>
           <h1 dangerouslySetInnerHTML={{ __html: data?.title }} />
           {/* <p dangerouslySetInnerHTML={{ __html: data?.description }} /> */}
