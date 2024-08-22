@@ -1,0 +1,23 @@
+.section_footer {
+  @apply flex w-full py-3 md:py-6 shadow-md bg-xana-footer text-xana-txt-footer;
+
+  & .footer_container {
+    @apply flex flex-col-reverse md:flex-row items-center justify-between w-full text-xana-txt-footer;
+
+    & ul {
+      @apply flex flex-row space-x-3 md:space-x-5 mt-3 md:mt-0;
+
+      & .li_options {
+        @apply block cursor-pointer font-medium;
+
+        & img {
+          @apply w-auto h-[14px] md:h-[18px] lg:h-[18px] opacity-90;
+        }
+      }
+    }
+
+    & p {
+      @apply text-sm md:text-base  font-normal text-xana-txt-footer;
+    }
+  }
+}

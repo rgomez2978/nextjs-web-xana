@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { fetchData } from "@/utils/fetchData";
 import { ElementScroll, TextData } from "@/components/ui";
-import { Banner } from "@/components/shared";
+import { Banner, CTA as CallToAction, Faqs } from "@/components/shared";
 import { AboutUs } from "@/components/modules";
+import style from "./style.module.css";
 
 export default async function Home() {
   await new Promise((resolve) => setTimeout(resolve, 2000))
@@ -12,19 +13,24 @@ export default async function Home() {
 
 
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen mx-auto ">
-
+    <div className={`${style.main_container}`}>
       <Banner data={header} />
-      <article className="w-full mx-auto my_border my_container">
-        <ElementScroll section={'aboutus'} data={aboutus} />
 
+      <article className={`my_container`}>
+        <ElementScroll section={'aboutus'} data={aboutus} />
       </article>
 
+      <CallToAction data={CTA} />
+
+      <article className={`my_container`}>
+        <ElementScroll section={'products'} data={features} />
+        <Faqs data={faqs} />
+      </article>
 
       {/*
-      <footer className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex my_border">
+      <footer className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex ">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nesciunt numquam nostrum quia. Saepe praesentium omnis numquam, harum enim sed nisi exercitationem laboriosam dignissimos cumque nobis, vitae quisquam quo aliquid.
       </footer> */}
-    </main>
+    </div>
   );
 }

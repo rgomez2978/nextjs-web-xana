@@ -1,11 +1,32 @@
 import React from 'react'
+import { fetchData } from '@/utils/fetchData';
+import { FooterItem } from '@/components/ui';
 import style from "./style.module.css";
 
-const Footer = () => {
+const Footer = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 2000))
+  const data = await fetchData(`http://localhost:3000/data/footer.json`);
+
   return (
-    <div className='flex flex-wrap items-center w-full py-4 bg-white shadow-md my_border'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem tenetur accusamus maiores dolore, officiis amet corporis enim nemo atque cum expedita facere perspiciatis veritatis unde blanditiis illum eveniet. Itaque, officiis!
-    </div>
+    <section className={`${style.section_footer}`}>
+
+      <div className={`${style.footer_container} my_container`}>
+        <ul>
+          {data?.socials.map((item) => (
+            <li key={item.id}>
+              <FooterItem {...item} />
+            </li>
+          ))}
+        </ul>
+
+        {/* <div> logo </div> */}
+
+        <p dangerouslySetInnerHTML={{ __html: data?.copy }} />
+      </div>
+
+
+
+    </section>
   )
 }
 

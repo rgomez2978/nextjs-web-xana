@@ -1,16 +1,18 @@
 .section_banner_container {
-  @apply flex justify-end items-start w-full h-auto bg-transparent flex-col;
+  @apply flex justify-end items-center w-full h-auto bg-transparent flex-col;
 
   & .banner_text {
-    @apply absolute flex flex-col items-start sm:items-center justify-center w-full sm:w-[53%] md:w-[53%] ml-3 md:ml-8 lg:ml-12;
+    /* @apply absolute flex flex-col items-start justify-center w-full ml-4 sm:ml-8 md:ml-10 lg:ml-20 xl:ml-20 2xl:ml-28; */
+
+    @apply absolute flex flex-col items-start justify-center px-3 sm:px-8 md:px-0 w-full sm:max-w-[98%] md:max-w-[90%] lg:max-w-[90%] xl:max-w-[90%] 2xl:max-w-[90%];
 
     & header {
       & h1 {
-        @apply font-normal text-xana-txt-banner text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl leading-tight mb-10 sm:mb-10 md:mb-10 xl:mb-8;
+        @apply font-normal text-xana-txt-banner text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl leading-tight mb-5 sm:mb-5 md:mb-4 xl:mb-8 opacity-80;
       }
 
       & p {
-        @apply text-base text-xana-txt-banner md:text-base lg:text-xl;
+        @apply text-base text-xana-txt-banner md:text-base lg:text-xl opacity-70;
       }
     }
   }
@@ -19,7 +21,7 @@
     @apply w-full h-auto;
 
     & img {
-      @apply object-cover object-center w-full h-[400px] sm:h-[450px] md:h-[550px] lg:h-[550px] xl:h-[600px];
+      @apply object-cover object-left md:object-left-top lg:md:object-center w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[550px] xl:h-[600px] 2xl:h-[700px] opacity-90;
     }
   }
 }

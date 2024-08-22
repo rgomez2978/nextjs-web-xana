@@ -5,7 +5,6 @@ import style from "./style.module.css";
 const Banner = ({ data }) => {
   return (
     <section className={`${style.section_banner_container}`} >
-      {/* Banner - Background */}
       <figure>
         <Image
           alt="Background Image"
@@ -16,16 +15,10 @@ const Banner = ({ data }) => {
         />
       </figure>
 
-      {/* Banner - Content */}
-      <div className={`${style.banner_text} `} >
+      <div className={`${style.banner_text}`} >
         <header>
           <h1 dangerouslySetInnerHTML={{ __html: data?.title }} />
         </header>
-        {/* <footer>
-          {data.links.map((item) => (
-            <button key={item.id}> {item.title}</button>
-          ))}
-        </footer> */}
       </div>
     </section>
   )

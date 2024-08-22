@@ -13,7 +13,7 @@ npm install framer-motion
 
 
 
-Configurar Tailwind CSS
+# Configurar Tailwind CSS
 Asegúrate de que tu archivo tailwind.config.js esté configurado correctamente. Para centrar contenedores por defecto y establecer un ancho máximo, puedes ajustar la configuración del contenedor así:
 
 /** @type {import('tailwindcss').Config} */
@@ -32,4 +32,23 @@ module.exports = {
   },
 }
 Esta configuración centra automáticamente los contenedores y añade un padding horizontal predeterminado que se ajusta según el tamaño de la pantalla.
+
+
+
+
+# CARGA DE DATA CLIENT
+ const getData = async () => {
+   try {
+     const response = await fetchData(`http://localhost:3000/data/menu.json`);
+     setDataFetch(response.items)
+   } catch (error) {
+     console.error('Error al cargar los datos:', error);
+   }
+ };
+
+
+ # CARAGA DE DATA SERVER
+  await new Promise((resolve) => setTimeout(resolve, 2000))
+  const data = await fetchData(`http://localhost:3000/data/menu.json`);
+  console.log('Navbar', data)
 

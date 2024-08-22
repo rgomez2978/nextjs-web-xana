@@ -1,0 +1,7 @@
+.section_cta {
+  @apply w-full flex justify-center items-center py-8 md:py-14  bg-xana-section mx-auto;
+
+  & h3 {
+    @apply text-2xl text-center font-normal text-xana-txt-title md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl opacity-70 w-[70%] sm:w-[60%] md:w-[65%] lg:w-[45%] xl:w-[60%] 2xl:w-[55%];
+  }
+}

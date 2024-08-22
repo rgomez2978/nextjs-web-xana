@@ -1,8 +1,11 @@
 import React from 'react'
+import style from "./style.module.css";
 
-const CTA = () => {
+const CTA = ({ data }) => {
   return (
-    <div>CTA</div>
+    <section className={`${style.section_cta}`}>
+      <h3 dangerouslySetInnerHTML={{ __html: data.subtitle }} />
+    </section>
   )
 }
 
