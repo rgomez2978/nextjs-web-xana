@@ -5,7 +5,6 @@ import Link from 'next/link';
 
 const FooterItem = (props) => {
 
-  console.log('FooterItem', props)
   return (
     <div className={`${style.li_options}`}>
       <Link href={props?.link}>

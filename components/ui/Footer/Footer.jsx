@@ -4,8 +4,8 @@ import { FooterItem } from '@/components/ui';
 import style from "./style.module.css";
 
 const Footer = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 2000))
-  const data = await fetchData(`http://localhost:3000/data/footer.json`);
+  // await new Promise((resolve) => setTimeout(resolve, 2000))
+  const data = await fetchData(`${process.env.NEXT_PUBLIC_API_URL_WEB}/data/footer.json`);
 
   return (
     <section className={`${style.section_footer}`}>

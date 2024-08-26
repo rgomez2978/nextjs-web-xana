@@ -6,8 +6,8 @@ import style from "./style.module.css";
 
 
 const Navbar = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 2000))
-  const data = await fetchData(`http://localhost:3000/data/menu.json`);
+  // await new Promise((resolve) => setTimeout(resolve, 2000))
+  const data = await fetchData(`${process.env.NEXT_PUBLIC_API_URL_WEB}/data/menu.json`);
 
   return (
     <header className={`${style.section_header_nav} `}>
@@ -16,7 +16,7 @@ const Navbar = async () => {
         <div className={`${style.header_nav_logo}`}>
           <Image
             alt="logo"
-            src={'images/logo_xana.svg'}
+            src={`${process.env.NEXT_PUBLIC_IMAGE_WEB}/logo_xana.svg`}
             width={0}
             height={0}
             sizes="100vw"

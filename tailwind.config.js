@@ -6,7 +6,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   extensions: ['.js', '.jsx', '.json', '.woff2'],
-
   theme: {
     extend: {
       fontFamily: {

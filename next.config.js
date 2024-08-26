@@ -1,10 +1,15 @@
 const path = require('path');
 
 module.exports = {
+  serverRuntimeConfig: {
+    port: process.env.PORT || 3000,
+  },
+  publicRuntimeConfig: {
+    apiUrl: process.env.API_URL_WEB,
+  },
   // distDir: "dist",
   reactStrictMode: false,
   images: {
-
     formats: [
       'image/avif',
       'image/webp',
@@ -27,6 +32,7 @@ module.exports = {
     return [
       {
         source: '/api/:path*',
+        // destination: `${process.env.NEXT_PUBLIC_API_URL_WEB}/api/:path*`,
         headers: [
           { key: 'Access-Control-Allow-Credentials', value: 'true' },
           { key: 'Access-Control-Allow-Origin', value: '*' },

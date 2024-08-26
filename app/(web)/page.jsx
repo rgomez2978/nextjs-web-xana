@@ -4,11 +4,11 @@ import { fetchData } from "@/utils/fetchData";
 import { ElementScroll, TextData } from "@/components/ui";
 import { Banner, CTA as CallToAction, Faqs } from "@/components/shared";
 import { AboutUs } from "@/components/modules";
-import style from "./style.module.css";
+import style from "../style.module.css";
 
 export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 2000))
-  const data = await fetchData(`http://localhost:3000/data/page.json`);
+  // await new Promise((resolve) => setTimeout(resolve, 2000))
+  const data = await fetchData(`${process.env.NEXT_PUBLIC_API_URL_WEB}/data/page.json`);
   const { header, aboutus, CTA, features, features2, features3, contactus, faqs, subscription, footer } = data;
 
 
