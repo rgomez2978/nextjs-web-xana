@@ -19,7 +19,6 @@ export default function Home() {
     })
   }, [])
 
-  console.log('data', data)
 
   if (data && Object.keys(data).length > 0) {
     const { header, aboutus, CTA, features, features2, features3, contactus, faqs, subscription, footer } = data;

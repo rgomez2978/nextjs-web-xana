@@ -3,9 +3,6 @@ import Image from 'next/image'
 import style from "./style.module.css";
 
 const Banner = ({ data }) => {
-  console.log('Banner', data)
-
-
   return (
     <section className={`${style.section_banner_container}`} >
       <figure className={`${style.banner_image}`}>

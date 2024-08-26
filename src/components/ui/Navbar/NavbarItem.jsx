@@ -6,22 +6,23 @@ import style from "./style.module.css";
 const NavbarItem = (props) => {
   const [activeLink, setActiveLink] = useState(null);
 
-  const activeLinkColor = activeLink === props.section ? ' text-xana-purple animation-active ' : ' text-xana-txt-text hover:text-xana-purple';
+  const onclickSection = () => {
+    setActiveLink(props.section);
 
+  }
 
-  console.log('activeLink', props.section, activeLink)
   return (
     <LinkScroll
-      activeClass="active"
+      activeClass={` ${style.li_active}`}
       to={props.section}
       spy={true}
       smooth={true}
       offset={-60}
       duration={800}
       onSetActive={() => {
-        setActiveLink(props.section);
+        onclickSection
       }}
-      className={`${style.li_options}  ${activeLink === props.section ? ' text-xana-purple animation-active ' : ' text-xana-txt-text hover:text-xana-purple'} `}
+      className={`${style.li_options} `}
     >
       {props.title}
     </LinkScroll>

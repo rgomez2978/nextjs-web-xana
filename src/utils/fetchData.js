@@ -37,6 +37,8 @@ export const fetchData = async (
       : null,
   }
 
+
+
   const res = await fetch(url, options)
   const data = await res.json()
   return data || []
@@ -53,8 +55,6 @@ const getData = async () => {
     }).then((res) => res.json())
     return data
   } catch (error) {
-    console.log('error', error)
     notFound()
-
   }
 }
