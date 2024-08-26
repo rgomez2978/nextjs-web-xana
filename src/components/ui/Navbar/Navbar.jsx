@@ -5,7 +5,6 @@ import { NavbarItem } from '@/components/ui';
 import { fetchData } from "@/utils/fetchData";
 import style from "./style.module.css";
 
-
 const Navbar = () => {
   const [data, setData] = useState([])
 
