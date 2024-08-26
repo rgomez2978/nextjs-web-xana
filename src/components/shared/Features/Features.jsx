@@ -4,11 +4,16 @@ import style from "./style.module.css";
 
 const Features = ({ data, type }) => {
   return (
-    <div className={`${style.section_features}`}>
-      {data.map((item) => (
-        <FeaturesItem key={item.id} type={type} {...item} />
-      ))}
-    </div>
+    <>
+      {data && (
+        <div className={`${style.section_features}`}>
+          {data.map((item, idx) => (
+            <FeaturesItem key={item.id} idx={idx} type={type} {...item} />
+          ))}
+        </div>
+
+      )}
+    </>
   )
 }
 

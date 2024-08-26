@@ -30,12 +30,17 @@ export default function Home() {
           <ElementScroll section={'aboutus'} data={aboutus} />
         </article>
 
-        <CallToAction data={CTA} />
+        {/* <CallToAction data={CTA} /> */}
 
         <article className={`my_container`}>
-          <ElementScroll section={'products'} data={features} />
-          <Faqs data={faqs} />
+          {/* <ElementScroll section={'products'} data={features} /> */}
+          {/* <Faqs data={faqs} /> */}
         </article>
+
+        <article className={`my_container`}>
+          <ElementScroll section={'features'} data={features2} />
+        </article>
+
       </div>
     );
   }

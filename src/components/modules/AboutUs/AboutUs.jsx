@@ -5,7 +5,7 @@ import style from "./style.module.css";
 const AboutUs = ({ data }) => {
   return (
     <section className={`${style.section_aboutus}`}>
-      <Title type="normal" title={data?.title} />
+      <Title type="normal" subtitle={data?.subtitle} />
       <Features type={'image'} data={data?.items} />
     </section>
   )

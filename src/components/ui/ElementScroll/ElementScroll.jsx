@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { AboutUs, Products } from '@/components/modules';
+import { AboutUs, Content, Products } from '@/components/modules';
 import { Element as Scroll } from "react-scroll";
 
 const ElementScroll = ({ data, section }) => {
@@ -8,6 +8,7 @@ const ElementScroll = ({ data, section }) => {
     const componentsMap = {
       aboutus: <AboutUs data={data} />,
       products: <Products data={data} />,
+      features: <Content data={data} />,
       contactus: <AboutUs data={data} />,
       blog: <AboutUs data={data} />,
     };

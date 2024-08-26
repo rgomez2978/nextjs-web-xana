@@ -1,5 +1,13 @@
 .title_normal {
-  @apply mx-auto mb-8 text-2xl font-normal text-xana-txt-title md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl opacity-80 w-[100%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] 2xl:w-[55%];
+  @apply mx-auto mb-8 text-xana-txt-title w-[100%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] 2xl:w-[55%];
+
+  & h3 {
+    @apply mt-2 mb-2 font-normal text-xana-txt-title text-2xl  md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl opacity-80;
+  }
+
+  & p {
+    @apply mt-2 mb-2 font-normal text-xana-txt-text text-base  md:text-base lg:text-lg 2xl:text-xl opacity-70;
+  }
 }
 
 .title_big {

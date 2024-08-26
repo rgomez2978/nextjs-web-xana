@@ -4,7 +4,10 @@ import style from "./style.module.css";
 
 const TitleNormal = ({ title, subtitle, description }) => {
   return (
-    <h2 className={`${style.title_normal}`} dangerouslySetInnerHTML={{ __html: title }} />
+    <header className={`${style.title_normal}`}>
+      <h3 dangerouslySetInnerHTML={{ __html: subtitle }} />
+      <p dangerouslySetInnerHTML={{ __html: description }} />
+    </header>
   )
 }
 
