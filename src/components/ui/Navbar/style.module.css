@@ -7,7 +7,7 @@
     & .header_nav_logo {
       @apply flex items-center justify-start flex-1 w-auto h-auto md:h-[22px] lg:h-[22px] xl:h-[28px] 2xl:h-[32px] opacity-90;
 
-      & img {
+      & .img_logo {
         @apply w-auto h-auto md:h-[22px] lg:h-[22px] xl:h-[28px] 2xl:h-[32px] opacity-90;
       }
     }

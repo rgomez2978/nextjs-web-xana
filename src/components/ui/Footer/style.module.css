@@ -10,7 +10,7 @@
       & .li_options {
         @apply block cursor-pointer font-medium w-auto h-[14px] md:h-[18px] lg:h-[18px];
 
-        & img {
+        & .img_options {
           @apply w-auto h-[14px] md:h-[18px] lg:h-[18px] opacity-90;
         }
       }

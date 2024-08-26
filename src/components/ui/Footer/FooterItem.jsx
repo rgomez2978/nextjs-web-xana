@@ -14,6 +14,7 @@ const FooterItem = (props) => {
           width={0}
           height={0}
           sizes="100vw"
+          className={`${style.img_options}`}
         />
       </Link>
     </div>

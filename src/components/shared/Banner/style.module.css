@@ -18,7 +18,7 @@
   & .banner_image {
     @apply w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[550px] xl:h-[600px] 2xl:h-[700px];
 
-    & img {
+    & .img_banner {
       @apply object-cover object-left md:object-left-top lg:md:object-center w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[550px] xl:h-[600px] 2xl:h-[700px] opacity-90;
     }
   }
