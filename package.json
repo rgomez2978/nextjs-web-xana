@@ -7,36 +7,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "deploy": "npm run build && git add . && git commit -m \"add export dist\" && git push origin master && git push my_origin master && npm run dev"
+    "deploy": "rm -rf .next && npm run build && git add . && git commit -m \"add export dist\" && git push origin master && git push my_origin master && npm run dev"
   },
   "dependencies": {
-    "next": "14.2.5",
+    "@tailwindcss/forms": "^0.5.7",
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.52.2",
+    "react-hook-form": "^7.53.0",
     "react-scroll": "^1.9.0",
-    "swiper": "^11.1.9",
-    "zustand": "^4.5.5"
+    "swiper": "^11.1.10",
+    "tailwindcss-animated": "^1.1.2"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^1.7.0",
-    "@storybook/addon-essentials": "^8.2.9",
-    "@storybook/addon-interactions": "^8.2.9",
-    "@storybook/addon-links": "^8.2.9",
-    "@storybook/addon-onboarding": "^8.2.9",
-    "@storybook/blocks": "^8.2.9",
-    "@storybook/nextjs": "^8.2.9",
-    "@storybook/react": "^8.2.9",
-    "@storybook/test": "^8.2.9",
-    "@tailwindcss/forms": "^0.5.7",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5",
-    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-config-next": "14.2.6",
     "postcss": "^8",
-    "storybook": "^8.2.9",
-    "tailwindcss": "^3.4.1",
-    "tailwindcss-animated": "^1.1.2"
+    "tailwindcss": "^3.4.1"
   }
 }

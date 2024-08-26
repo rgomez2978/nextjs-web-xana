@@ -41,3 +41,20 @@ export const fetchData = async (
   const data = await res.json()
   return data || []
 }
+
+
+const getData = async () => {
+  try {
+    const data = await fetch('http://localhost:3000/data/page.json', {
+      // cache: 'force-cache'
+      next: {
+        revalidate: 60 * 60 * 24 * 30
+      }
+    }).then((res) => res.json())
+    return data
+  } catch (error) {
+    console.log('error', error)
+    notFound()
+
+  }
+}

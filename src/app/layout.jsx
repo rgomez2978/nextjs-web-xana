@@ -10,7 +10,6 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
 
-
   return (
     <html lang="en">
       <body className={`${FreizeitTrial.variable} ${style.layout_web} font-FreizeitTrial`}>
