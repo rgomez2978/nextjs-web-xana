@@ -45,7 +45,7 @@ export const fetchData = async (
 
 const getData = async () => {
   try {
-    const data = await fetch('http://localhost:3000/data/page.json', {
+    const data = await fetch(`${NEXT_PUBLIC_API_URL_WEB}/data/page.json`, {
       // cache: 'force-cache'
       next: {
         revalidate: 60 * 60 * 24 * 30
