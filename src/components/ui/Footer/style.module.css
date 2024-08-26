@@ -8,7 +8,7 @@
       @apply flex flex-row space-x-3 md:space-x-5 mt-3 md:mt-0;
 
       & .li_options {
-        @apply block cursor-pointer font-medium;
+        @apply block cursor-pointer font-medium w-auto h-[14px] md:h-[18px] lg:h-[18px];
 
         & img {
           @apply w-auto h-[14px] md:h-[18px] lg:h-[18px] opacity-90;

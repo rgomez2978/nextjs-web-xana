@@ -29,7 +29,7 @@ const Navbar = () => {
           <div className={`${style.header_nav_logo}`}>
             <Image
               alt="logo"
-              src={`${process.env.NEXT_PUBLIC_IMAGE_WEB}/logo_xana.svg`}
+              src={`${process.env.NEXT_PUBLIC_RUTA_IMG}/logo_xana.svg`}
               width={0}
               height={0}
               sizes="100vw"

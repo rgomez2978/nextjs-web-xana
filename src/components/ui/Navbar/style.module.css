@@ -5,7 +5,7 @@
     @apply flex flex-row mx-auto justify-between px-3 sm:px-8 md:px-0 w-full sm:max-w-[98%] md:max-w-[90%] lg:max-w-[90%] xl:max-w-[90%] 2xl:max-w-[90%];
 
     & .header_nav_logo {
-      @apply flex items-center justify-start flex-1;
+      @apply flex items-center justify-start flex-1 w-auto h-auto md:h-[22px] lg:h-[22px] xl:h-[28px] 2xl:h-[32px] opacity-90;
 
       & img {
         @apply w-auto h-auto md:h-[22px] lg:h-[22px] xl:h-[28px] 2xl:h-[32px] opacity-90;

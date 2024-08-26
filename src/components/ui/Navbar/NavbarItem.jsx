@@ -8,6 +8,8 @@ const NavbarItem = (props) => {
 
   const activeLinkColor = activeLink === props.section ? ' text-xana-purple animation-active ' : ' text-xana-txt-text hover:text-xana-purple';
 
+
+  console.log('activeLink', props.section, activeLink)
   return (
     <LinkScroll
       activeClass="active"
@@ -19,7 +21,7 @@ const NavbarItem = (props) => {
       onSetActive={() => {
         setActiveLink(props.section);
       }}
-      className={`${style.li_options} ${activeLinkColor} `}
+      className={`${style.li_options}  ${activeLink === props.section ? ' text-xana-purple animation-active ' : ' text-xana-txt-text hover:text-xana-purple'} `}
     >
       {props.title}
     </LinkScroll>

@@ -2,8 +2,6 @@
   @apply flex justify-end items-center w-full h-auto bg-transparent flex-col;
 
   & .banner_text {
-    /* @apply absolute flex flex-col items-start justify-center w-full ml-4 sm:ml-8 md:ml-10 lg:ml-20 xl:ml-20 2xl:ml-28; */
-
     @apply absolute flex flex-col items-start justify-center px-3 sm:px-8 md:px-0 w-full sm:max-w-[98%] md:max-w-[90%] lg:max-w-[90%] xl:max-w-[90%] 2xl:max-w-[90%];
 
     & header {
@@ -17,8 +15,8 @@
     }
   }
 
-  & figure {
-    @apply w-full h-auto;
+  & .banner_image {
+    @apply w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[550px] xl:h-[600px] 2xl:h-[700px];
 
     & img {
       @apply object-cover object-left md:object-left-top lg:md:object-center w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[550px] xl:h-[600px] 2xl:h-[700px] opacity-90;
