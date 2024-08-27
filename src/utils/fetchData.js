@@ -55,6 +55,5 @@ const getData = async () => {
     }).then((res) => res.json())
     return data
   } catch (error) {
-    notFound()
   }
 }

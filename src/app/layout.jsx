@@ -2,6 +2,7 @@ import { FreizeitTrial } from '@/app/fonts';
 import "./globals.css";
 import style from "./style.module.css";
 import { Footer, Navbar } from '@/components/ui';
+import NotFound from './not-found';
 
 export const metadata = {
   title: "XANA",

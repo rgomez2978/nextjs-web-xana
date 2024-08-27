@@ -4,24 +4,17 @@ import { Link as LinkScroll } from "react-scroll";
 import style from "./style.module.css";
 
 const NavbarItem = (props) => {
+  console.log('NavbarItem', props)
   const [activeLink, setActiveLink] = useState(null);
-
-  const onclickSection = () => {
-    setActiveLink(props.section);
-
-  }
 
   return (
     <LinkScroll
-      activeClass={` ${style.li_active}`}
+      activeClass={`${style.li_active}`}
       to={props.section}
       spy={true}
       smooth={true}
-      offset={-60}
+      offset={-40}
       duration={800}
-      onSetActive={() => {
-        onclickSection
-      }}
       className={`${style.li_options} `}
     >
       {props.title}

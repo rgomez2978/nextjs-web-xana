@@ -4,6 +4,7 @@ import { fetchData } from "@/utils/fetchData";
 import { ElementScroll, TextData } from "@/components/ui";
 import { Banner, CTA as CallToAction, Faqs } from "@/components/shared";
 import style from "./style.module.css";
+import NotFound from './not-found';
 
 
 export default function Home() {
@@ -30,18 +31,26 @@ export default function Home() {
           <ElementScroll section={'aboutus'} data={aboutus} />
         </article>
 
-        {/* <CallToAction data={CTA} /> */}
-
-        <article className={`my_container`}>
-          {/* <ElementScroll section={'products'} data={features} /> */}
-          {/* <Faqs data={faqs} /> */}
-        </article>
+        <CallToAction data={CTA} />
 
         <article className={`my_container`}>
           <ElementScroll section={'features'} data={features2} />
         </article>
 
-      </div>
+        <article className={`my_container`}>
+          <ElementScroll section={'products'} data={features} />
+        </article>
+
+        <article className={`my_container`}>
+          <ElementScroll section={'faqs'} data={faqs} />
+        </article>
+
+        <CallToAction data={CTA} />
+
+
+        <br />
+
+      </div >
     );
   }
 }

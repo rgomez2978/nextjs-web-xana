@@ -8,18 +8,30 @@
     },
     {
       "id": 2,
+      "title": "Servicios",
+      "section": "features",
+      "link": "/"
+    },
+    {
+      "id": 3,
       "title": "Productos",
       "section": "products",
       "link": "/"
     },
     {
-      "id": 3,
+      "id": 4,
+      "title": "Preguntas frequentes",
+      "section": "faqs",
+      "link": "/"
+    },
+    {
+      "id": 5,
       "title": "Úbicanos",
       "section": "contactus",
       "link": "/"
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Blog",
       "section": "blog",
       "link": "/"
