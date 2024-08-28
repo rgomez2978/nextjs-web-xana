@@ -1,4 +1,8 @@
-.section_faqs {
+.section_content {
+  @apply relative overflow-hidden py-10 text-center;
+}
+
+.section_content_faqs {
   @apply flex-grow text-left pt-5 pb-16;
 
   & .faqs_grid_container {

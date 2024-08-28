@@ -11,7 +11,6 @@ const Features = ({ data, type }) => {
             <FeaturesItem key={item.id} idx={idx} type={type} {...item} />
           ))}
         </div>
-
       )}
     </>
   )

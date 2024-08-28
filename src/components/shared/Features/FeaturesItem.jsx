@@ -4,34 +4,36 @@ import style from "./style.module.css";
 
 const FeatureIMG = ({ img, title, description }) => {
   return (
-    <div className={`${style.features_image_container}`}>
+    <div className={`${style.features_container}`}>
       <Image
         alt="Background Image"
         src={img}
         width={0}
         height={0}
         sizes="100vw"
+        className={`${style.img_image_container}`}
       />
       <section>
-        <h3 dangerouslySetInnerHTML={{ __html: title }} />
+        <h2 dangerouslySetInnerHTML={{ __html: title }} />
         <p dangerouslySetInnerHTML={{ __html: description }} />
       </section>
     </div>
   )
 }
 
-const FeatureIMG_SVG = ({ img, title, description }) => {
+const FeatureICON_SVG = ({ img, title, description }) => {
   return (
-    <div className={`${style.features_image_svg_container}`}>
+    <div className={`${style.features_container}`}>
       <Image
         alt="Background Image"
         src={img}
         width={0}
         height={0}
         sizes="100vw"
+        className={`${style.img_icon_svg_container}`}
       />
       <section>
-        <h3 dangerouslySetInnerHTML={{ __html: title }} />
+        <h2 dangerouslySetInnerHTML={{ __html: title }} />
         <p dangerouslySetInnerHTML={{ __html: description }} />
       </section>
     </div>
@@ -46,12 +48,35 @@ const FeatureIcon = ({ img, title, description }) => {
 
 const FeatureText = ({ title, description }) => {
   return (
-    <div className={`${style.features_text_container}`}>
+    <div className={`${style.section_features_faqs}`}>
       <h3 dangerouslySetInnerHTML={{ __html: title }} />
       <p dangerouslySetInnerHTML={{ __html: description }} />
     </div>
   )
 }
+
+
+const FeatureTextMap = ({ title, address, schedule, phoneNumbers, location }) => {
+  return (
+    <div className={`${style.section_address_map} `}>
+      <h3 dangerouslySetInnerHTML={{ __html: title }} />
+      <section>
+        <p dangerouslySetInnerHTML={{ __html: address }} />
+        <p dangerouslySetInnerHTML={{ __html: schedule }} />
+        <div className={`${style.phone_container}`}>
+          {phoneNumbers.map((phone) => (
+            <span key={phone.id} dangerouslySetInnerHTML={{ __html: phone.number }} />
+          ))}
+        </div>
+      </section>
+      <button className={`${style.button_container}`}>
+        <span dangerouslySetInnerHTML={{ __html: location?.title }} />
+        <div dangerouslySetInnerHTML={{ __html: location?.icon }} />
+      </button>
+    </div>
+  )
+}
+
 
 const FeatureContent = ({ idx, img, title, description, buttons }) => {
 
@@ -96,9 +121,10 @@ const FeatureContent = ({ idx, img, title, description, buttons }) => {
 const FeaturesItem = (props) => {
   const componentsSelected = {
     image: <FeatureIMG {...props} />,
-    image_svg: <FeatureIMG_SVG {...props} />,
+    image_svg: <FeatureICON_SVG {...props} />,
     icon: <FeatureIcon {...props} />,
     text: <FeatureText {...props} />,
+    text_map: <FeatureTextMap {...props} />,
     content: <FeatureContent {...props} />,
   };
   return componentsSelected[props.type] || null;

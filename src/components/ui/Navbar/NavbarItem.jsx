@@ -4,7 +4,6 @@ import { Link as LinkScroll } from "react-scroll";
 import style from "./style.module.css";
 
 const NavbarItem = (props) => {
-  console.log('NavbarItem', props)
   const [activeLink, setActiveLink] = useState(null);
 
   return (

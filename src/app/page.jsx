@@ -26,29 +26,18 @@ export default function Home() {
     return (
       <div className={`${style.main_container}`}>
         <Banner data={header} />
+        <article className={`my_container`}>
+          <ElementScroll section={'aboutus'} data={features2} />
+          {/* <ElementScroll section={'aboutus2'} data={aboutus} /> */}
+          {/* <ElementScroll section={'products'} data={features} /> */}
+          {/* <ElementScroll section={'faqs'} data={faqs} /> */}
+        </article>
+        <CallToAction section={'text'} data={CTA} />
 
         <article className={`my_container`}>
-          <ElementScroll section={'aboutus'} data={aboutus} />
+          <ElementScroll section={'contactus'} data={contactus} />
         </article>
-
-        <CallToAction data={CTA} />
-
-        <article className={`my_container`}>
-          <ElementScroll section={'features'} data={features2} />
-        </article>
-
-        <article className={`my_container`}>
-          <ElementScroll section={'products'} data={features} />
-        </article>
-
-        <article className={`my_container`}>
-          <ElementScroll section={'faqs'} data={faqs} />
-        </article>
-
-        <CallToAction data={CTA} />
-
-
-        <br />
+        {/* <CallToAction section={'subscribe'} data={CTA} /> */}
 
       </div >
     );
