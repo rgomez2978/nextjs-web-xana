@@ -20,10 +20,10 @@ const Tabs = ({ data }) => {
     <section>
       {/* Tab Buttons */}
       <nav className={`${style.section_tabs}`}>
-        <ul>
+        <ul className={`${style.ul_tab}`}>
           {data.states.map((item, idx) => (
             <li key={item.id}
-              className={`${activeTab === `tab${item.id}`
+              className={`${style.li_tabs} ${activeTab === `tab${item.id}`
                 ? 'border-b-2 !font-medium border-b-xana-txt-text-tab-border  text-xana-blue py-1 -mb-[2px] '
                 : ' text-xana-txt-text-tab'}}`}
               onClick={() => handleTab(item)}
@@ -33,7 +33,7 @@ const Tabs = ({ data }) => {
           ))}
         </ul>
       </nav>
-      {/* Tab Buttons */}
+      {/* Tab Content */}
       {data.states.map((tab, idx) => (
         <TabsItem key={tab.id} idx={idx} {...tab} active={activeTab} />
       ))}

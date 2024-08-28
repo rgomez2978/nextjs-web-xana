@@ -60,15 +60,23 @@ const FeatureTextMap = ({ title, address, schedule, phoneNumbers, location }) =>
   return (
     <div className={`${style.section_address_map} `}>
       <h3 dangerouslySetInnerHTML={{ __html: title }} />
-      <section className={`${style.section_address_text}`}>
+
+      <div className={`${style.section_address_text}`}>
         <p dangerouslySetInnerHTML={{ __html: address }} />
         <p dangerouslySetInnerHTML={{ __html: schedule }} />
+
         <div className={`${style.phone_container}`}>
           {phoneNumbers.map((phone) => (
-            <span key={phone.id} dangerouslySetInnerHTML={{ __html: phone.number }} />
+            <span
+              key={phone.id}
+              className={`${style.span_phone}`}
+              dangerouslySetInnerHTML={{ __html: phone.number }}
+            />
           ))}
         </div>
-      </section>
+
+      </div>
+
       <button className={`${style.button_container}`}>
         <span dangerouslySetInnerHTML={{ __html: location?.title }} />
         <div dangerouslySetInnerHTML={{ __html: location?.icon }} />

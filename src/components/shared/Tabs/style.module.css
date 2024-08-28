@@ -1,10 +1,10 @@
 .section_tabs {
   @apply flex justify-center p-2 text-center;
 
-  & ul {
-    @apply flex justify-center items-center  border-b-2 w-[80%];
+  & .ul_tab {
+    @apply flex justify-center items-center border-b-2 w-[80%] space-x-6;
 
-    & li {
+    & .li_tabs {
       @apply px-4 py-2 font-normal capitalize opacity-70 cursor-pointer;
     }
   }

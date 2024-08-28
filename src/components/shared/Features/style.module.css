@@ -46,14 +46,14 @@
   & .section_address_text {
     @apply flex flex-col items-start justify-start w-full h-full;
     & p {
-      @apply mb-[0.5px] text-sm md:text-xs lg:text-sm font-normal text-xana-txt-text-tab  opacity-70;
+      @apply mb-[0.5px] no-underline text-sm md:text-xs lg:text-sm font-normal text-xana-txt-text-tab  opacity-70;
     }
+  }
 
-    & .phone_container {
-      @apply flex flex-row justify-start items-center  space-x-2;
-      & span {
-        @apply underline text-xana-blue text-sm md:text-xs lg:text-xs font-medium opacity-70;
-      }
+  & .phone_container {
+    @apply flex flex-row justify-start items-center  space-x-2;
+    & .span_phone {
+      @apply underline text-xana-blue text-sm md:text-xs lg:text-xs font-medium opacity-70;
     }
   }
 
@@ -61,7 +61,7 @@
     @apply w-full flex flex-row justify-start items-center space-x-2 mt-5;
 
     & span {
-      @apply underline text-xana-blue text-sm md:text-xs lg:text-sm font-normal opacity-70;
+      @apply no-underline text-xana-blue text-sm md:text-xs lg:text-sm font-normal opacity-70;
     }
 
     & svg {
