@@ -16,12 +16,15 @@ const Banner = ({ data }) => {
         />
       </figure>
 
-      <div className={`${style.banner_text}`} >
-        <header>
-          <h1 dangerouslySetInnerHTML={{ __html: data.title }} />
-        </header>
+      <div className={`${style.banner_text} `} >
+        <div className={`${style.banner_text_container} `} >
+          <header>
+            <h1 className='hidden md:flex' dangerouslySetInnerHTML={{ __html: data.title }} />
+            <h1 className='flex md:hidden' dangerouslySetInnerHTML={{ __html: data.subtitle }} />
+          </header>
+        </div>
       </div>
-    </section >
+    </section>
   )
 }
 

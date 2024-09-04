@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import style from "./style.module.css";
 import { FeaturesItem } from '@/components/shared';
-import { SVGCaracas } from '@/components/svg';
+
 
 const TabsItem = ({ idx, id, name, img, clients, active }) => {
   return (
@@ -11,14 +11,13 @@ const TabsItem = ({ idx, id, name, img, clients, active }) => {
       className={`${style.section_tabs_content}  ${active === `tab${id}` ? 'flex' : 'hidden'}`}
     >
       <figure>
-        {/* <Image
+        <Image
           alt="Background Image"
           src={img}
           width={0}
           height={0}
           sizes="100vw"
-        /> */}
-        <SVGCaracas />
+        />
       </figure>
 
       <div className={`${style.section_text_address}`}>

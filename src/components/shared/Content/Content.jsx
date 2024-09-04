@@ -20,7 +20,12 @@ const ContentAboutUs = ({ data }) => {
 const ContentAboutUs2 = ({ data }) => {
   return (
     <section className={`${style.section_content}`}>
-      <Title type="big                            " subtitle={data?.subtitle} />
+      <Title
+        type="big"
+        title={data?.title}
+        subtitle={data?.subtitle}
+        description={data?.description}
+      />
       <Features type={'image'} data={data?.items} />
     </section>
   )
@@ -81,7 +86,6 @@ const ContentFaqs = ({ data }) => {
 const Content = (props) => {
   const componentsSelected = {
     aboutus: <ContentAboutUs {...props} />,
-    aboutus2: <ContentAboutUs2 {...props} />,
     services: <ContentServices {...props} />,
     products: <ContentProducts {...props} />,
     faqs: <ContentFaqs {...props} />,

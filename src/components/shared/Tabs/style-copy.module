@@ -1,0 +1,52 @@
+.section_tabs {
+  @apply flex justify-center p-2 text-center;
+
+  & .ul_tab {
+    @apply flex justify-center items-center border-b-2 w-[80%] space-x-6;
+
+    & .li_tabs {
+      @apply px-4 py-2 font-normal capitalize opacity-70 cursor-pointer;
+    }
+  }
+}
+
+.section_tabs_content {
+  @apply flex-col justify-center items-center w-full mt-10 px-0 lg:px-10;
+
+  & figure {
+    /* @apply flex justify-center w-full bg-xana-blue-light h-[200px] lg:h-auto rounded-2xl; */
+
+    @apply flex justify-center w-full bg-xana-blue-light h-[200px] lg:h-auto rounded-2xl;
+
+    /* & img {
+      @apply object-cover object-center w-full opacity-90;
+    } */
+
+    & svg {
+      @apply object-cover object-center w-full opacity-90 z-10;
+
+      & .g_active {
+        @apply absolute z-30 !fill-[#129AE5] stroke-[#F9F9F9] stroke-[0.78px] transform translate-x-[10px];
+
+        /* & path {
+          @apply -z-10 fill-[#D9EDFD] stroke-[#F9F9F9] stroke-[0.78px];
+        } */
+
+        & a {
+          @apply stroke-[#F9F9F9];
+          & path {
+            @apply -z-10 !fill-[#129AE5] hover:!fill-xana-blue;
+          }
+        }
+      }
+    }
+  }
+
+  & .section_text_address {
+    @apply mx-auto mt-10 w-auto lg:px-10;
+
+    & .address_grid_container {
+      @apply grid grid-cols-1 md:gap-8 lg:gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3;
+    }
+  }
+}

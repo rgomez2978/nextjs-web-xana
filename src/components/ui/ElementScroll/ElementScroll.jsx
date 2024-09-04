@@ -6,7 +6,7 @@ import { Element as Scroll } from "react-scroll";
 const ElementScroll = ({ data, section }) => {
   return (
     <Scroll name={section}>
-      <section className="w-full" >
+      <section>
         <Content data={data} section={section} />
       </section>
     </Scroll>

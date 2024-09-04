@@ -1,7 +1,8 @@
 {
   "header": {
-    "title": "La farmacia que cuida</br> de ti como lo haría el</br> doctor de tu familia.",
-    "description": "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
+    "title": "Cuidamos de ti como <br /> lo haría el doctor de <br />  tu familia",
+    "subtitle": "Cuidamos de ti como lo haría el doctor de tu familia",
+    "description": "",
     "img": "/images/hero/hero_section.svg",
     "links": [
       {
@@ -15,27 +16,39 @@
     ]
   },
   "aboutus": {
-    "title": "",
-    "subtitle": "Que hace xana diferente?",
-    "description": "",
+    "title": "in esperas innecesar",
+    "subtitle": "En qué nos diferenciamos",
+    "description": "En Xana combinamos la innovación con un servicio cercano y humano para garantizarte siempre el mejor precio y la atención que te mereces.",
     "items": [
       {
         "id": 1,
         "img": "/images/aboutus/aboutus_1.svg",
-        "title": "Precios",
-        "description": "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop."
+        "title": "Atención empática",
+        "description": "Te escuchamos y comprendemos. Nuestra atención va más allá de lo esperado, brindándote un servicio personalizado y cercano, porque para nosotros, tú eres lo más importante."
       },
       {
         "id": 2,
         "img": "/images/aboutus/aboutus_2.svg",
-        "title": "Delivery",
-        "description": "An all-in-one customer service platform that helps you balance everything your customers need to be happy."
+        "title": "Sin esperas innecesarias",
+        "description": "En xana, valoramos tu tiempo. Disfruta de un servicio rápido y eficiente, sin las largas filas, para que puedas obtener lo que necesitas sin demoras."
       },
       {
         "id": 3,
         "img": "/images/aboutus/aboutus_3.svg",
-        "title": "Disponibilidad",
-        "description": "Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks."
+        "title": "Ahorro inteligente",
+        "description": "Te ayudamos a cuidar tu salud sin descuidar tu bolsillo. Nuestros precios accesibles y ofertas constantes garantizan que siempre obtengas el mejor valor por tu dinero."
+      },
+      {
+        "id": 4,
+        "img": "/images/aboutus/aboutus_4.svg",
+        "title": "Siempre disponibles",
+        "description": "No importa cuándo nos necesites, en Xana siempre estamos a tu disposición. Nuestra amplia gama de productos y horarios extendidos aseguran que encuentres lo que buscas, cuando lo buscas."
+      },
+      {
+        "id": 5,
+        "img": "/images/aboutus/aboutus_5.svg",
+        "title": "Delivery rápido y seguro",
+        "description": "Lleva la farmacia a la puerta de tu casa. Con nuestro servicio de delivery, recibirás tus medicamentos y productos de salud de manera rápida, segura, y sin complicaciones."
       }
     ]
   },
@@ -44,68 +57,6 @@
     "subtitle": "estamos aquí para que vivir sano sea más fácil y accesible para ti.   ",
     "description": "",
     "img": ""
-  },
-  "features": {
-    "title": "Features",
-    "subtitle": "El servicio extraordinario que te mereces",
-    "description": "Powerful, self-serve product and growth analytics to help you convert, engage and retain more users. Trusted by over 4,000 startups.",
-    "items": [
-      {
-        "id": 1,
-        "img": "/images/features/feature_1.svg",
-        "title": "Precios",
-        "description": "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop."
-      },
-      {
-        "id": 2,
-        "img": "/images/features/feature_2.svg",
-        "title": "Delivery",
-        "description": "An all-in-one customer service platform that helps you balance everything your customers need to be happy."
-      },
-      {
-        "id": 3,
-        "img": "/images/features/feature_3.svg",
-        "title": "Disponibilidad",
-        "description": "Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks."
-      }
-    ]
-  },
-  "features2": {
-    "title": "",
-    "subtitle": "Por qué xana?",
-    "description": "En xana, combinamos la innovación con un servicio cercano y humano, garantizándote siempre el mejor precio y la atención que te mereces.   ",
-    "items": [
-      {
-        "id": 1,
-        "img": "/images/features/feature2_1.svg",
-        "title": "Ahorro inteligente",
-        "description": "Te ayudamos a cuidar tu salud sin descuidar tu bolsillo. Nuestros precios accesibles y ofertas constantes garantizan que siempre obtengas el mejor valor por tu dinero."
-      },
-      {
-        "id": 2,
-        "img": "/images/features/feature2_2.svg",
-        "title": "Siempre disponibles",
-        "description": "No importa cuándo nos necesites, en Xana siempre estamos a tu disposición. Nuestra amplia gama de productos y horarios extendidos aseguran que encuentres lo que buscas, cuando lo buscas."
-      },
-      {
-        "id": 3,
-        "img": "/images/features/feature2_3.svg",
-        "title": "Atención empática",
-        "description": "Te escuchamos y comprendemos. Nuestra atención va más allá de lo esperado, brindándote un servicio personalizado y cercano, porque para nosotros, tú eres lo más importante."
-      },
-      {
-        "id": 4,
-        "img": "/images/features/feature2_4.svg",
-        "title": "Sin esperas innecesarias",
-        "description": "En xana, valoramos tu tiempo. Disfruta de un servicio rápido y eficiente, sin las largas filas, para que puedas obtener lo que necesitas sin demoras."
-      },
-      {
-        "id": 5,
-        "img": "/images/features/feature2_5.svg",
-        "title": "Delivery rápido y seguro",
-        "description": "Lleva la farmacia a la puerta de tu casa. Con nuestro servicio de delivery, recibirás tus medicamentos y productos de salud de manera rápida, segura, y sin complicaciones."
-      }
-    ]
   },
   "features3": {
     "title": "",

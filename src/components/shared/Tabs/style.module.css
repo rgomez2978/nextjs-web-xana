@@ -14,7 +14,7 @@
   @apply flex-col justify-center items-center w-full mt-10 px-0 lg:px-10;
 
   & figure {
-    @apply flex justify-center  w-full bg-xana-blue-light h-[200px] lg:h-auto rounded-2xl;
+    @apply flex justify-center w-full bg-xana-blue-light h-[200px] lg:h-auto rounded-2xl;
 
     & img {
       @apply object-cover object-center w-full opacity-90;

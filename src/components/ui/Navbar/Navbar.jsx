@@ -26,10 +26,10 @@ const Navbar = () => {
       <header className={`${style.section_header_nav} `}>
         <div className={`${style.header_nav_container}  `}>
 
-          <div className={`${style.header_nav_logo}`}>
+          <div className={`${style.header_nav_logo} `}>
             <Image
               alt="logo"
-              src={`${process.env.NEXT_PUBLIC_RUTA_IMG}/logos/logo_xana.svg`}
+              src={`${process.env.NEXT_PUBLIC_RUTA_IMG}/logos/logo_xana2.svg`}
               width={0}
               height={0}
               sizes="100vw"

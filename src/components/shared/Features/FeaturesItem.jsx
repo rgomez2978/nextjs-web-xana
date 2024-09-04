@@ -86,39 +86,29 @@ const FeatureTextMap = ({ title, address, schedule, phoneNumbers, location }) =>
 }
 
 
-const FeatureContent = ({ idx, img, title, description, buttons }) => {
-
+const FeatureContent = ({ idx, id, img, title, description, buttons }) => {
   let par = idx % 2 === 0;
 
+  console.log('fiFeatureContentrst', idx, id, img, title, description, buttons)
+
   return (
-    <div className={`mx-auto md:grid max-w-7xl md:grid-flow-col-dense md:grid-cols-2 mt-10 md:mt-0  lg:gap-24 md:px-2 lg:px-8  `}>
-      <div className={`mx-auto max-w-xl px-8 lg:mx-0 md:max-w-none py-0 md:py-16 md:px-0  ${par ? '' : 'md:col-start-2'}  `}>
-        <div className="text-left md:mt-6">
-          <h2 className="mb-2 text-xl font-bold md:text-lg xl:text-xl text-xana-txt-title opacity-80">
-            {title}
-          </h2>
-          <p className="text-base font-normal md:text-sm lg:text-base text-xana-txt-text opacity-70">
-            {description}
-          </p>
-          {/* <div className="mt-6">
-                  <a className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-xana-txt-title shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
-                    href="/login">
-                    Learn More
-                  </a>
-                </div> */}
+    <div className={`${style.section_features_content}`}>
+      <div className={`${style.text_feature_content} ${par ? '' : 'md:col-start-2'}`}>
+        <div className={`${style.text_feature_content_container}`}>
+          <h2>{title}</h2>
+          <p>{description}</p>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-0 lg:mt-0 ">
-        <div className={`flex items-center justify-center h-auto md:h-[230px] lg:h-[290px] xl:h-[250px] 2xl:h-[300px] opacity-90 w-full  ${par ? 'md:pr-10 md:-ml-5' : 'md:pl-10 md:-mr-5 '}`}>
+      <div className={`${style.image_feature_content}`}>
+        <figure className={` ${par ? 'md:pr-10 md:ml-5 lg:-ml-5' : 'md:pl-10 md:mr-5 lg:-mr-5 '}`}>
           <Image
-            alt="Background Image"
+            alt="feature Image"
             src={img}
             width={0}
             height={0}
             sizes="100vw"
-            className={`w-auto md:w-full h-[250px] md:h-[230px] lg:h-[290px] xl:h-[250px] 2xl:h-[300px] opacity-90`}
           />
-        </div>
+        </figure>
       </div>
     </div>
   )
