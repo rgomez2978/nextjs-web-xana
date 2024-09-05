@@ -1,20 +1,20 @@
 .section_tabs {
-  @apply flex justify-center p-2 text-center;
+  @apply flex justify-center p-2 text-center -mt-5 md:mt-0;
 
   & .ul_tab {
-    @apply flex justify-center items-center border-b-2 w-[80%] space-x-6;
+    @apply flex justify-center items-center border-b-2 w-[80%] space-x-2 md:space-x-6;
 
     & .li_tabs {
-      @apply px-4 py-2 font-normal capitalize opacity-70 cursor-pointer;
+      @apply px-2 md:px-4 py-2 text-lg md:text-lg font-normal capitalize opacity-70 cursor-pointer;
     }
   }
 }
 
 .section_tabs_content {
-  @apply flex-col justify-center items-center w-full mt-10 px-0 lg:px-10;
+  @apply flex-col justify-center items-center w-full mt-3 px-0 lg:px-10;
 
   & figure {
-    @apply flex justify-center w-full bg-xana-blue-light h-[200px] lg:h-auto rounded-2xl;
+    @apply flex justify-center w-full bg-xana-blue-light h-[120px] lg:h-auto rounded-2xl;
 
     & img {
       @apply object-cover object-center w-full opacity-90;
@@ -25,7 +25,18 @@
     @apply mx-auto mt-10 w-auto lg:px-10;
 
     & .address_grid_container {
-      @apply grid grid-cols-1 md:gap-8 lg:gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3;
+      @apply grid grid-cols-1 gap-8 md:gap-8 lg:gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3;
+    }
+
+    & .button_container {
+      @apply flex flex-row justify-center mx-auto items-center px-5 py-2 mt-10 transition duration-300 ease-in-out border-2 text-xana-blue border-xana-border-button rounded-lg space-x-3;
+      & span {
+        @apply no-underline text-xana-blue text-sm md:text-sm lg:text-base font-medium opacity-70;
+      }
+
+      & svg {
+        @apply text-xana-txt-text-tab-border w-8 h-8 md:w-12 md:h-12 lg:w-5 lg:h-5;
+      }
     }
   }
 }

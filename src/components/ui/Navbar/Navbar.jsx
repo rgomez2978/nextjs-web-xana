@@ -3,13 +3,18 @@ import { useEffect, useState } from 'react'
 import Image from "next/image";
 import { NavbarItem } from '@/components/ui';
 import { fetchData } from "@/utils/fetchData";
+import UAParser from 'ua-parser-js';
 import style from "./style.module.css";
 
 const Navbar = () => {
   const [data, setData] = useState([])
+  const parser = new UAParser();
+  const getDevice = parser.getResult();
 
   const getData = async () => {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL_WEB}/data/menu.json`)
+
+    return (getDevice.device.type === undefined || getDevice.device.type === 'desktop') || getDevice.cpu.architecture === 'undefined' ? fetchData(`${process.env.NEXT_PUBLIC_API_URL_WEB}/data/menu.json`) : fetchData(`${process.env.NEXT_PUBLIC_API_URL_WEB_MOBILE}/data/menu.json`)
+
   }
 
   useEffect(() => {

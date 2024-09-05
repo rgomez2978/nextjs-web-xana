@@ -89,8 +89,6 @@ const FeatureTextMap = ({ title, address, schedule, phoneNumbers, location }) =>
 const FeatureContent = ({ idx, id, img, title, description, buttons }) => {
   let par = idx % 2 === 0;
 
-  console.log('fiFeatureContentrst', idx, id, img, title, description, buttons)
-
   return (
     <div className={`${style.section_features_content}`}>
       <div className={`${style.text_feature_content} ${par ? '' : 'md:col-start-2'}`}>

@@ -2,13 +2,16 @@
 import { useEffect, useState } from 'react'
 import { fetchData } from '@/utils/fetchData';
 import { FooterItem } from '@/components/ui';
+import UAParser from 'ua-parser-js';
+
 import style from "./style.module.css";
 
 const Footer = () => {
   const [data, setData] = useState([])
-
+  const parser = new UAParser();
+  const getDevice = parser.getResult();
   const getData = async () => {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL_WEB}/data/footer.json`)
+    return (getDevice.device.type === undefined || getDevice.device.type === 'desktop') || getDevice.cpu.architecture === 'undefined' ? fetchData(`${process.env.NEXT_PUBLIC_API_URL_WEB}/data/footer.json`) : fetchData(`${process.env.NEXT_PUBLIC_API_URL_WEB_MOBILE}/data/footer.json`)
   }
 
   useEffect(() => {

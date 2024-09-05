@@ -1,5 +1,5 @@
 .section_content {
-  @apply relative overflow-hidden py-10 text-center;
+  @apply relative overflow-hidden py-5 text-center;
 }
 
 .section_content_faqs {

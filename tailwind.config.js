@@ -32,6 +32,7 @@ module.exports = {
         "xana-txt-text": "#475467",
         "xana-txt-text-tab": "#79716B",
         "xana-txt-text-tab-border": "#2586EB",
+        "xana-border-button": "#93D8FD",
         "xana-txt-footer": "#D6BBFB",
         "xana-blue": "#1D6FD8",
         "xana-blue-light": "#EFF9FF",

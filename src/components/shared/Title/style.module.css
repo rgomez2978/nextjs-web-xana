@@ -2,7 +2,7 @@
   @apply mx-auto mb-10 md:mb-8 text-xana-txt-title w-[100%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] 2xl:w-[55%];
 
   & h3 {
-    @apply mt-2 mb-2 font-normal text-xana-txt-title text-3xl  md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl opacity-80;
+    @apply mt-2 mb-2 font-semibold md:font-normal text-xana-txt-title text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl opacity-80;
   }
 
   & p {

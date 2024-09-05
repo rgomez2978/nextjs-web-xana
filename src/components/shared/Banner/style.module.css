@@ -9,7 +9,7 @@
 
       & header {
         & h1 {
-          @apply text-center md:text-start font-normal text-xana-txt-banner text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl leading-tight mb-5 sm:mb-5 md:mb-4 xl:mb-8 opacity-80;
+          @apply text-center md:text-start font-normal text-xana-txt-banner text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl leading-tight mb-5 sm:mb-5 md:mb-4 xl:mb-8 opacity-80;
         }
 
         & p {
