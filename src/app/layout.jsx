@@ -7,7 +7,17 @@ import NotFound from './not-found';
 export const metadata = {
   title: "XANA",
   description: "Portal web XANA",
+  icons: {
+    icon: [
+      {
+        src: './favicon.ico',
+        sizes: 'any',
+        type: 'image/x-icon',
+      },
+    ],
+  },
 };
+
 
 export default async function RootLayout({ children }) {
 

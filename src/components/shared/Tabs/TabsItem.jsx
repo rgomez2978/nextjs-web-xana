@@ -1,42 +1,58 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { FeaturesItem, Skeleton } from '@/components/shared';
+import { SVGArrowDown, SVGArrowUp } from '@/components/svg';
 import style from "./style.module.css";
-import { FeaturesItem } from '@/components/shared';
-import { SVGArrowDown } from '@/components/svg';
 
 
-const TabsItem = ({ idx, id, name, img, clients, active }) => {
-
+const TabsItem = ({ id, img, clients, active }) => {
   const [featureText, setFeatureText] = useState(clients.slice(0, 3))
-  const [hasNextPage, setHasNextPage] = useState(true)
   const [page, setPage] = useState(1)
+  const [isLoading, setIsLoading] = useState(false)
+  const startIndex = page * 3
+  const showItems = clients.length - startIndex
+  const endIndex = startIndex + showItems
+  const [moreFeatureText, setMoreFeatureText] = useState(clients.slice(startIndex, endIndex))
 
-  const loadMoreFeatureText = () => {
-    const startIndex = page * 3
-    const endIndex = startIndex + 3
-    const newFeatureText = clients.slice(startIndex, endIndex)
+  const loadMoreFeatureText = async () => {
+    setIsLoading(true)
+    await new Promise(resolve => setTimeout(resolve, 500))
+    setMoreFeatureText(clients.slice(startIndex, endIndex))
 
-    if (newFeatureText.length === 0) {
-      setHasNextPage(false)
+    if (featureText.length === clients.length) {
+      return
     } else {
-      setFeatureText([...featureText, ...newFeatureText])
+      setFeatureText([...featureText, ...moreFeatureText])
       setPage(page + 1)
     }
+    setIsLoading(false)
+  }
 
-    // console.log('newFeatureText.length', newFeatureText.length)
+  const seeLessFeatureText = async () => {
+    setFeatureText(clients.slice(0, 3))
+    setPage(1)
+    setIsLoading(false)
   }
 
 
   useEffect(() => {
-    if (clients.length < 3) {
-      setHasNextPage(false)
-    }
-  }, [])
+    setFeatureText(clients.slice(0, 3))
+    setPage(1)
+    setIsLoading(false)
+  }, [active])
+
+
+  console.table({
+    "active tab": active,
+    "isLoading": isLoading,
+    "total_clients": clients.length,
+    "Primeros registros": featureText.length,
+  })
 
 
 
-  // console.log('first', first)
   return (
     <div
       id={`tab${id}`}
@@ -58,12 +74,19 @@ const TabsItem = ({ idx, id, name, img, clients, active }) => {
             <FeaturesItem key={item.id} type={'text_map'} {...item} />
           ))}
         </div>
-        {hasNextPage && (
-          <button onClick={loadMoreFeatureText} className={`${style.button_container}`}>
-            <span dangerouslySetInnerHTML={{ __html: 'Ver todas las tiendas' }} />
-            <SVGArrowDown className={``} />
-          </button>
-        )}
+
+        <div className={`${style.address_grid_container} `}>
+          <Skeleton type={'store'} visible={isLoading} />
+        </div>
+
+        <button onClick={featureText.length !== clients.length
+          ? loadMoreFeatureText
+          : seeLessFeatureText}
+          className={`${style.button_container}`}>
+          <span dangerouslySetInnerHTML={{ __html: featureText.length !== clients.length ? 'Ver todas las tiendas' : 'Ver menos' }} />
+
+          {featureText.length !== clients.length ? <SVGArrowDown /> : <SVGArrowUp />}
+        </button>
       </div>
     </div >
   )

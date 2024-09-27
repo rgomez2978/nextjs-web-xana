@@ -34,7 +34,7 @@ export default function Home() {
       <div className={`${style.main_container}`}>
         <Banner data={header} />
         <article className={`my_container`}>
-          <ElementScroll section={'aboutus'} data={aboutus} />
+          {/* <ElementScroll section={'aboutus'} data={aboutus} /> */}
           {/* <ElementScroll section={'aboutus2'} data={aboutus} /> */}
           {/* <ElementScroll section={'products'} data={features} /> */}
           {/* <ElementScroll section={'faqs'} data={faqs} /> */}

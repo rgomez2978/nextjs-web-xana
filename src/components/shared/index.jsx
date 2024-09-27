@@ -11,3 +11,6 @@ export { default as Services } from '@/components/shared/Services/Services';
 export { default as Content } from '@/components/shared/Content/Content';
 export { default as Tabs } from '@/components/shared/Tabs/Tabs';
 export { default as TabsItem } from '@/components/shared/Tabs/TabsItem';
+export { default as Skeleton } from '@/components/shared/Skeleton/Skeleton';
+
+

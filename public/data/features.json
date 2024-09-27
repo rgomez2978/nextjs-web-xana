@@ -1,0 +1,34 @@
+{
+  "data": {
+    "title": "",
+    "subtitle": "Estamos cambiando tu experiencia a la hora de buscar tus medicinas",
+    "description": "Somos una nueva clase de farmacia que mantiene a los comunidades más saludables, a los doctores más satisfechos, y reduce complicaciones y costos, todo a través de la tecnología aplicada con un toque humano.",
+    "img": "/images/features/foto1.jpg",
+    "items": [
+      {
+        "id": 1,
+        "img": "/images/features/feature3_1.svg",
+        "title": "Cercanía",
+        "description": "Siempre a tu lado, brindando el apoyo y la confianza de un buen vecino. Estamos aquí para cuidarte cuando más lo necesitas."
+      },
+      {
+        "id": 2,
+        "img": "/images/features/feature3_2.svg",
+        "title": "Ahorro",
+        "description": "Ofrecemos productos de calidad a precios justos, para que cuides tu salud y tu economía con tranquilidad."
+      },
+      {
+        "id": 3,
+        "img": "/images/features/feature3_3.svg",
+        "title": "Innovación",
+        "description": "Nos adaptamos a tus necesidades con soluciones modernas y eficaces, para que siempre tengas lo mejor en salud."
+      },
+      {
+        "id": 4,
+        "img": "/images/features/feature3_4.svg",
+        "title": "Comunidad",
+        "description": "Tu bienestar es nuestra prioridad. Te escuchamos, entendemos y respondemos con un servicio que realmente se adapta a ti."
+      }
+    ]
+  }
+}

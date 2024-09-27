@@ -1,0 +1,450 @@
+{
+  "data": {
+    "title": "",
+    "subtitle": "¿Dónde estamos?",
+    "description": "Ubica nuestras tiendas en Venezuela",
+    "img": "/images/contactus/mapa.svg",
+    "states": [
+      {
+        "id": 1,
+        "name": "Caracas",
+        "img": "/images/contactus/caracas.svg",
+        "clients": [
+          {
+            "id": 1,
+            "title": "Rofassy",
+            "address": "Av. España, Edif. Hung y Loy, n° 84, Boulevard de Catia. Frente al Mercado Pérez Bonalde",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0273-5522190"
+              },
+              {
+                "id": 2,
+                "number": "0273-5522192"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 2,
+            "title": "Las Rosas",
+            "address": "Calle A, Edif. Las Rosas, P.B., Local 2, Santa Rosa.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0414-2193208"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 3,
+            "title": "Valery",
+            "address": "Av. Francisco de Miranda, Esquina Redoma de Petare, Edif. El Cacique, PB, Local PB1, Petare.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0414-2193208"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 4,
+            "title": "Melicar",
+            "address": "Av. Casanova, C.C El Recreo, Nivel 5, Local L-22.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1387078"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 5,
+            "title": "La Cascada",
+            "address": "C.C La Cascada, Edif. D, Nivel P.B., Local 45, Los Teques.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1406182"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 6,
+            "title": "La Rinconada",
+            "address": "Av. Simón Bolívar CC Propatria, nivel 3, local 4D.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-2013700"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 7,
+            "title": "San Charbel",
+            "address": "Carretera Panamericana, final del Km 12, C.C Sena, Local A, San Antonio De Los Altos.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1385583"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 8,
+            "title": "Vizcaya",
+            "address": "C.C Vizcaya, P.B., Locales 10 y 11, Santa Paula.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1406159"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 9,
+            "title": "Modelo",
+            "address": "Av. Sucre, Esquina Manicomio, N° 21, Catia.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1404487"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 10,
+            "title": "Gran Colombia",
+            "address": "Calle Colombia, Edif. Delta, P.B., Catia.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1404487"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 11,
+            "title": "Cutira",
+            "address": "Av. Sucre, Esquina Los Frailes, Catia.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1406106"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 12,
+            "title": "Pamela",
+            "address": "Av. Urdaneta, Elevado Andrés Bello, C.C Galerías Ávila, local P86.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1390414"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 13,
+            "title": "Estefania",
+            "address": "Av. Miguel Angel, Con calle Cervantes, Edif Oberon, P.B., Local A, Colinas de Bello Monte.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1402953"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 14,
+            "title": "Erika",
+            "address": "Av. Principal de la Carlota Edif. Arce, PB.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0424-1385567"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Lara",
+        "img": "/images/contactus/lara.svg",
+        "clients": [
+          {
+            "id": 1,
+            "title": "Betania",
+            "address": "Carrera 6, Calles 6 y 7,  sector Santa Isabel, Iribarren, Barquisimeto.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-2340865"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 2,
+            "title": "Medisalud",
+            "address": "Av. ppal Jose Felix Rivas con Ayacucho y Maracay, Barrio Jose Felix Rivas, Iribarren, Barquisimeto.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-2340860 "
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 3,
+            "title": "Quibor",
+            "address": "Calle 11,  Av. 12 y Av. 13, sector San Rafael, Quíbor.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-2234332"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 4,
+            "title": "La Manga",
+            "address": "Av. 4, esquina calle 11, parroquia Aguedo Felipe Alvarado, Municipio Iribarren, sector Bobare.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-2234331"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 5,
+            "title": "El Tocuyo",
+            "address": "Av Lisandro Alvarado, Cruce con Calle 10, Tocuyo.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-2234330"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 6,
+            "title": "Mercabar",
+            "address": "Av. Carlos Giffoni, Zona Industrial III, Mercado Mayorista de Alimentos, Local # CF-04, Barquisimeto.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-2234330"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Portuguesa",
+        "img": "/images/contactus/portuguesa.svg",
+        "clients": [
+          {
+            "id": 1,
+            "title": "Boulevard",
+            "address": "Av. 5 de Diciembre, Cc Lucy, Local #3, Acarigua.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-5391412"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 2,
+            "title": "Economía",
+            "address": "Av. 30 entre calles 28 y 29 CC Tepuy, Local # 4, Municipio Páez, Sector Centro Acarigua",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-5391406"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Barinas",
+        "img": "/images/contactus/barinas.svg",
+        "clients": [
+          {
+            "id": 1,
+            "title": "La Carolina",
+            "address": "Calle Camejo, Cruce con Avenida Vuelvan Caras, sector Centro, Barinas.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-3065040"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          },
+          {
+            "id": 2,
+            "title": "Cruz Paredes",
+            "address": "Calle Carvajal, Casa Nro. 13-55 Sector Centro Barinas.",
+            "phoneNumbers": [
+              {
+                "id": 1,
+                "number": "0412-5392693"
+              }
+            ],
+            "schedule": "07:00 AM - 07:00 PM",
+            "location": {
+              "title": "¿Cómo llegar?",
+              "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 16 16\" > <path fillRule=\"evenodd\" d=\"M4 8a.5.5 0 01.5-.5h5.793L8.146 5.354a.5.5 0 11.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.293 8.5H4.5A.5.5 0 014 8z\" /> </svg>",
+              "address": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

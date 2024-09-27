@@ -1,0 +1,18 @@
+{
+  "data": {
+    "title": "Cuidamos de ti como <br /> lo haría el doctor de <br />  tu familia",
+    "subtitle": "Cuidamos de ti como lo haría el doctor de tu familia",
+    "description": "",
+    "img": "/images/hero/hero_section.svg",
+    "links": [
+      {
+        "id": 1,
+        "text": "Postulate como proveedor",
+        "type": "link",
+        "icon": "",
+        "url": "",
+        "title": "Ver video"
+      }
+    ]
+  }
+}

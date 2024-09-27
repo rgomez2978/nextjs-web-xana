@@ -15,7 +15,6 @@ const Tabs = ({ data }) => {
     setActiveTab('tab1')
   }, [])
 
-
   return (
     <section>
       {/* Tab Buttons */}

@@ -1,0 +1,39 @@
+  {
+    "data": {
+      "title": "in esperas innecesar",
+      "subtitle": "En qué nos diferenciamos",
+      "description": "En Xana combinamos la innovación con un servicio cercano y humano para garantizarte siempre el mejor precio y la atención que te mereces.",
+      "items": [
+        {
+          "id": 1,
+          "img": "/images/aboutus/aboutus_1.svg",
+          "title": "Atención empática",
+          "description": "Te escuchamos y comprendemos. Nuestra atención va más allá de lo esperado, brindándote un servicio personalizado y cercano, porque para nosotros, tú eres lo más importante."
+        },
+        {
+          "id": 2,
+          "img": "/images/aboutus/aboutus_2.svg",
+          "title": "Sin esperas innecesarias",
+          "description": "En xana, valoramos tu tiempo. Disfruta de un servicio rápido y eficiente, sin las largas filas, para que puedas obtener lo que necesitas sin demoras."
+        },
+        {
+          "id": 3,
+          "img": "/images/aboutus/aboutus_3.svg",
+          "title": "Ahorro inteligente",
+          "description": "Te ayudamos a cuidar tu salud sin descuidar tu bolsillo. Nuestros precios accesibles y ofertas constantes garantizan que siempre obtengas el mejor valor por tu dinero."
+        },
+        {
+          "id": 4,
+          "img": "/images/aboutus/aboutus_4.svg",
+          "title": "Siempre disponibles",
+          "description": "No importa cuándo nos necesites, en Xana siempre estamos a tu disposición. Nuestra amplia gama de productos y horarios extendidos aseguran que encuentres lo que buscas, cuando lo buscas."
+        },
+        {
+          "id": 5,
+          "img": "/images/aboutus/aboutus_5.svg",
+          "title": "Delivery rápido y seguro",
+          "description": "Lleva la farmacia a la puerta de tu casa. Con nuestro servicio de delivery, recibirás tus medicamentos y productos de salud de manera rápida, segura, y sin complicaciones."
+        }
+      ]
+    }
+  }
